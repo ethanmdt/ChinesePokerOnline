@@ -7,3 +7,6 @@ Network course teamwork
 
 目前规定还不稳定，数据报文格式暂未定义
 预计5月1日前完成稳定规范
+
+Server和Client文件夹中各自socket部分和游戏部分分离，并且共用 游戏分桌(GameTable)
+ChinesePoker是两端游戏的基类，两端采用不同类的原因是Client端不应该获得其他玩家的手牌等数据
