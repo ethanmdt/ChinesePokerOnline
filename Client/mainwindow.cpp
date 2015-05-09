@@ -39,7 +39,7 @@ void MainWindow::on_login_clicked()
     tcpSocket->connectToHost("120.26.77.201",
                              4000);
                              */
-    connect(socket.tcpSocket, SIGNAL(connected()), this, SLOT(connectSuc()));
+    connect(socket.tcpSocket, SIGNAL(connected()), &socket, SLOT(connectSuc()));
     socket.init();
     ui->login->setDisabled(true);
 
